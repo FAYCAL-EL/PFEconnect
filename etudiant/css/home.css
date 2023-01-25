@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&family=Tangerine:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#logoensak{
+    width: 125px;
+    height: 55px;
+    margin-left: 55px;
+    margin-bottom: 10px;
+}
+.navigation{
+    position: fixed;
+    top:0;
+    height: 100%;
+    width: 4.5%;
+    background-color: #0368ff;
+    overflow-x: hidden;
+    transition: width 0.5s;
+    z-index: 1;
+}
+.navigation:hover{
+    width: 20%;
+}
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 20px;
+}
+.navigation ul li{
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.navigation ul li.active{
+    background: #fff;
+}
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    line-height: 60px; 
+}
+.navigation ul li.active a{
+    color: #0368ff;
+}
+.navigation ul li.active a::before{
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: #0368ff;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0px #fff;
+    
+}
+.navigation ul li.active a::after{
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: #0368ff;
+    border-radius: 50%;
+    box-shadow: 15px -15px 0px #fff;
+}
+.icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+.icon ion-icon{
+    position: relative;
+    font-size: 1.5em;
+    z-index: 1;
+}
+.banner{
+    position: absolute;
+    left:160px;
+}
+.containaire{
+    margin-top: 20vh;
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+    /* width: 80%; */
+
+}
+.descetcomm{
+	margin-left: 60px;
+	margin-top: 90px;
+}
+.descetcomm p{
+	display: block;
+	width: 300PX;
+	margin-top: 10px;
+}
+#imgbanner{
+	width: 550px;
+	height: auto;
+    display: block;
+    margin-left: 60px;
+}
+.button{
+	display: block;
+	margin-top: 50px;
+	text-decoration: none;
+	width: 200px;
+	padding: 13px 0;
+	background-color: #0368ff;
+	color: #fff;
+	border-radius: 30px;
+	text-align: center;
+	text-transform: uppercase;
+    border:1px solid #0368ff;
+}
+.button:hover{
+    transition: 0.5s;
+    background-color: #fff;
+	color: #0368ff;
+    border:1px solid #0368ff;
+}
+.espacenum{
+	width: 80%;
+	margin: auto;
+	margin-top: 180px;
+    padding-top: 20px;
+	z-index: 2;
+    margin-bottom: 80px;
+}
+.espacenum h3{
+	text-align: center;
+	text-transform: uppercase;
+}
+.slider{
+	max-width: 1100px;
+	display: flex;
+	place-items: center;
+	text-align: center;
+	margin-top: 30px;
+}
+.slider .card{
+	flex: 1;
+	margin: 20px 10px;
+	height: 400px;
+	background: #f1f1f1;
+	border-radius: 10px;
+}
+.slider .card .img{
+	height: 150px;
+	width: 100%;
+	background: linear-gradient(transparent,rgb(0, 0, 0)) no-repeat;
+	flex: 1;
+}
+
+.slider .card .img img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 10px 10px 0px 0px;
+	opacity: 0.5;
+}
+
+.slider .card .content{
+	padding: 10px 20px;
+}
+.card .content .title{
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 600;
+	height: 40px;
+	text-transform: capitalize;
+}
+.card .content .text{
+	display: inline-block;
+	height: 120px;
+	text-align: center ;
+}
+.card .content .btn{
+	display: inline-block;
+	text-align: left;
+	align-items: flex-end;
+	margin: 10px 0;
+	height: 20%;
+}
+.card .content .btn button{
+background: #0368ff;
+color: #fff;
+border: none;
+outline: none;
+font-size: 17px;
+padding: 5px 8px;
+border-radius: 5px;
+cursor: pointer;
+transition: 0.2s;
+}
+.card .content .btn button:hover{
+transform: scale(0.9);
+}

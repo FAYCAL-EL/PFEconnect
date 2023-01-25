@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&family=Tangerine:wght@700&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+}
+
+
+#logoensak{
+  width: 125px;
+  height: 55px;
+  margin-left: 55px;
+  margin-bottom: 10px;
+}
+.navigation{
+  position: fixed;
+  top:0;
+  height: 100%;
+  width: 4.5%;
+  background-color: #0368ff;
+  overflow-x: hidden;
+  transition: width 0.5s;
+  z-index: 1;
+}
+.navigation:hover{
+  width: 20%;
+}
+.navigation ul{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 5px;
+  padding-top: 20px;
+}
+.navigation ul li{
+  position: relative;
+  list-style: none;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.navigation ul li.active{
+  background: #fff;
+}
+.navigation ul li a{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  text-decoration: none;
+  color: white;
+  line-height: 60px; 
+}
+.navigation ul li.active a{
+  color: #0368ff;
+}
+.navigation ul li.active a::before{
+  content: '';
+  position: absolute;
+  top: -30px;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background: #0368ff;
+  border-radius: 50%;
+  box-shadow: 15px 15px 0px #fff;
+  
+}
+.navigation ul li.active a::after{
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background: #0368ff;
+  border-radius: 50%;
+  box-shadow: 15px -15px 0px #fff;
+}
+.icon{
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 70px;
+  text-align: center;
+}
+.icon ion-icon{
+  position: relative;
+  font-size: 1.5em;
+  z-index: 1;
+}
+/* body {
+  font-family: Mukta, sans-serif;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: #4f546c;
+  font-size: 0.9rem;
+  background-color: #f9fbff;
+} */
+section{
+  margin-left: 10%;
+}
+section h2{
+  padding-top: 50px;
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 1rem;
+  color: #0368ff;
+  font-weight: bold;
+}
+section p{
+text-align: center;
+margin-bottom: 4rem;
+
+}
+table {
+  border-collapse: collapse;
+  box-shadow: 0 5px 10px #e1e5ee;
+  background-color: white;
+  text-align: left;
+  overflow: hidden;
+  width: 95%;
+}
+  thead {
+    box-shadow: 0 5px 10px #e1e5ee;
+  }
+
+  th {
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 900;
+  }
+  td 
+  {
+    font-size: 0.85rem;
+    padding: 1rem 2rem;
+  }
+ 
+  .amount {
+    text-align: right;
+  }
+  tr:nth-child(even) {
+    background-color:#f4f6fb;
+  }
+  input[type="submit"]{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: #2962ff;
+  }
+
+  #wrap {
+    margin: 20px auto;
+    text-align: center;
+    margin-top: 0;
+    
+}
+
+.btn-slide{
+    position: relative;
+    display: inline-block;
+   
+    height: 53px;
+    width: 200px;
+    line-height: 50px;
+    padding: 0;
+    border-radius: 50px;
+    background: #fdfdfd;
+    border: 2px solid #0368ff;
+    margin: 10px;
+    transition: .5s;
+}
+
+.btn-slide:hover {
+    background-color: #0368ff;
+}
+
+.btn-slide:hover span.circle{
+    left: 100%;
+    margin-left: -45px;
+    background-color: #fdfdfd;
+    color: #0368ff;
+}
+
+
+
+.btn-slide:hover span.title{
+    left: 40px;
+    opacity: 0;
+}
+
+.btn-slide:hover span.title-hover{
+    opacity: 1;
+    left: 40px;
+}
+
+.btn-slide span.circle{
+    display: block;
+    background-color: #0368ff;
+    color: #fff;
+    position: absolute;
+    float: left;
+    margin: 5px;
+    line-height: 42px;
+    height: 40px;
+    width: 40px;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    border-radius: 50%;
+}
+
+
+
+.btn-slide span.title,
+  .btn-slide span.title-hover {
+    position: absolute;
+    left: 90px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0368ff;
+    transition: .5s;
+}
+
+.btn-slide span.title-hover{
+    left: 80px;
+    opacity: 0;
+}
+
+.btn-slide span.title-hover{
+    color: #fff;
+}
+
+.desc{
+  margin-bottom: 0px;
+}

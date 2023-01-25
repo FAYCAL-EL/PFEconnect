@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&family=Tangerine:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#logoensak{
+    width: 125px;
+    height: 55px;
+    margin-left: 55px;
+    margin-bottom: 10px;
+}
+.navigation{
+    position: fixed;
+    top:0;
+    height: 100%;
+    width: 4.5%;
+    background-color: #0368ff;
+    overflow-x: hidden;
+    transition: width 0.5s;
+    z-index: 1;
+}
+.navigation:hover{
+    width: 20%;
+}
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 20px;
+}
+.navigation ul li{
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.navigation ul li.active{
+    background: #fff;
+}
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    line-height: 60px; 
+}
+.navigation ul li.active a{
+    color: #0368ff;
+}
+.navigation ul li.active a::before{
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: #0368ff;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0px #fff;
+    
+}
+.navigation ul li.active a::after{
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: #0368ff;
+    border-radius: 50%;
+    box-shadow: 15px -15px 0px #fff;
+}
+.icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+.icon ion-icon{
+    position: relative;
+    font-size: 1.5em;
+    z-index: 1;
+}
+
+.banner{
+	background: rgba(82, 50, 50, 0.1);
+    width: 50%;
+	display: flex;
+	flex-direction: row;
+	padding: 30px;
+	color: #000;
+	margin: 90px 30px;
+	border-radius: 10px;
+    margin-left: 25%;
+}
+.banner1{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+    width: 100%;
+}
+
+.photodeprofile{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin-bottom: 50px;
+}
+.photodeprofile img{
+	width: 150px;
+	height: 150px;
+	border:2px solid #000;
+
+	border-radius: 50%;
+}
+
+
+.modifermdp a{
+    display: inline-block;
+	color: #000;
+    margin-top: 40px;
+}
+.photodeprofile{
+    position: relative;
+}
+.overlay1 {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+height: 100%;
+width: 100%;
+opacity: 0;
+transition: .5s ease;
+background:rgba(0,0,0,0.5);
+border-radius:50%;
+cursor:pointer;
+}
+
+.photodeprofile:hover .overlay1 {
+opacity: 1;
+}
+
+.text {
+color: white;
+font-size: 15px;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+text-align: center;
+}
+
+
+
